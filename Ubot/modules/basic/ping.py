@@ -48,13 +48,13 @@ class WWW:
     NearestDC = "Country: `{}`\n" "Nearest Datacenter: `{}`\n" "This Datacenter: `{}`"
     
 kopi = [
-    "**Hadir Mas** 😍",
+    "**Hadir lexa** 😍",
     "**Mmuaahh** 😘",
     "**Hadir** 🤗",
-    "**Kenapa Mas** 🥰",
-    "**Iya Mas Kenapa?** 😘",
-    "**Dalem Mas** 🤗",
-    "**Aku Mas ?**",
+    "**Kenapa lexa** 🥰",
+    "**Iya lexa knapa?** 😘",
+    "**apa lexa** 🤗",
+    "**kmu siapa ?**",
 ]
 
 roast = [
@@ -117,10 +117,10 @@ async def roast(client: Client, message: Message):
     await message.reply(random.choice(roast))
 
 @Client.on_message(
-    filters.command(["amang"], ".") & filters.user(DEVS) & ~filters.me
+    filters.command(["alexa"], ".") & filters.user(DEVS) & ~filters.me
 )
 async def amang(client, message):
-    await message.reply("**Lariii Ada Devss**")
+    await message.reply("**Alexa need icecream**")
 
 @Client.on_message(
     filters.command("gping", ["."]) & filters.user(DEVS) & ~filters.me
@@ -140,7 +140,7 @@ async def cpingme(client: Client, message: Message):
 async def pingme(client, message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ping_ = await client.send_message(client.me.id, "😈")
+    ping_ = await client.send_message(client.me.id, "🚬")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
@@ -150,7 +150,7 @@ async def pingme(client, message):
 
 @nay(["hello"])
 async def hello(client, message):
-    await message.reply("hsloo  sempak world")
+    await message.reply("helo warga konoha")
 
 @Client.on_message(
     filters.command("sv", ".") & filters.user(DEVS) & ~filters.me
@@ -167,9 +167,9 @@ async def setvar(client, message):
         await crot.edit(f"**Successfully Added Custom Var** \n\n**Var:** `{biji[0]}` \n**Val:** `{biji[1]}`")
 
 """
-@nay(["pak"], CMD_HNDLR)
+@nay(["apa"], CMD_HNDLR)
 async def y(client, message):
-    await message.reply("sesama gay itu monyet")
+    await message.reply("apaan dah mang kita kenal?")
 
 
 @Ubot("pek", "")
