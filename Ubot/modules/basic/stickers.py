@@ -29,11 +29,11 @@ from ubotlibs.ubot.utils import *
 
 
 sat= [
-    "Ijin nyolong banh..",
-    "Buset maling ah...",
-    "Sststststs Dor...",
-    "Woy, Ijin maling banh..",
-    "Minta dong banh ...",
+    "Ijin nyolong bang..",
+    "Digebukin nanti lu...",
+    "Sststststs bacot...",
+    "Woy, Maling ngentot..",
+    "Ngentot maling...",
 ]
 """
 @Client.on_message(filters.command(["pack"], cmds) & filters.me)
