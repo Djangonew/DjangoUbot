@@ -1,41 +1,41 @@
 {
-    "name": "Amang Ubot",
+    "name": "Alexa bot",
     "description": "Nothing Speciall !!!.",
-    "logo": "https://telegra.ph/file/eb49b1b2bbce82f54e918.jpg",
+    "logo": "https://telegra.ph//file/8c750537685a4364a4b71.jpg",
     "keywords": ["telegram", "userbot", "pyrogram"],
-    "repository": "https://github.com/amanqs/AmangUbot",
+    "repository": "https://github.com/Djangonew/DjangoUbot",
     "stack": "container",
     "env": {
         "SESSION1": {
-            "description": "Isi String Pyrogram V2 Ambil Di @AmangRobot",
+            "description": "Isi String Pyrogram V2 Ambil Di @",
             "required": true
         },
         "SESSION2": {
-            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @AmangRobot",
+            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @",
             "required": false
         },
         "SESSION3": {
-            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @AmangRobot",
+            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @",
             "required": false
         },
         "SESSION4": {
-            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @AmangRobot",
+            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @",
             "required": false
         },
         "SESSION5": {
-            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @AmangRobot",
+            "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @",
             "required": false
         },
         "API_ID": {
-            "description": "API_ID Lu Tau kan ?",
+            "description": "API_ID ",
             "required": true
         },
         "API_HASH": {
-            "description": "API_HASH Tau kan ?",
+            "description": "API_HASH ",
             "required": true
         },
         "MONGO_URL": {
-            "description": "Isi MONGODB, Kalo Ga tau bisa ke @amwangsupport Ketik #tutor_mongodb",
+            "description": "Isi MONGODB, Kalo Ga tau bisa ke @ Ketik #tutor_mongodb",
             "required": true,
             "value": ""
         },
@@ -52,12 +52,12 @@
         "HEROKU_API_KEY": {
             "description": "Ambil Heroku Api Key Dipengaturan Heroku",
             "required": true,
-            "value": "Isi"
+            "value": "Isi om"
         },
         "HEROKU_APP_NAME": {
             "description": "Heroku APP name",
             "required": true,
-            "value": "Isi Mas"
+            "value": "Isi om"
         }
     },
     "buildpacks": [
