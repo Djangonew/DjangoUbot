@@ -20,9 +20,9 @@ from ubotlibs.ubot.utils import *
 @Ubot(["gcast"], cmds)
 async def gcast_cmd(client, message):
     if message.reply_to_message or get_arg(message):
-        nay = await message.reply("`Memulai broadcast...`")
+        nay = await message.reply("`Sᴇᴅᴀɴɢ Pʀᴏsᴇs Sᴀʙᴀʀ Tᴏᴛ...`")
     else:
-        return await message.edit("**Balas ke pesan/berikan sebuah pesan**")
+        return await message.edit("**Pesan nya mana ngentot gada**")
     done = 0
     error = 0
     user_id = client.me.id
@@ -41,13 +41,13 @@ async def gcast_cmd(client, message):
                     elif get_arg:
                         await client.send_message(chat, msg)
                     done += 1
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.1)
                 except Exception:
                     error += 1
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.1)
                     
     await nay.edit(
-        f"**Berhasil mengirim ke** `{done}` **Groups chat, Gagal mengirim ke** `{error}` **Groups**"
+        f"**✅Berhasil mengirim ke** `{done}` **Groups chat, ❌Gagal mengirim ke** `{error}` **Groups**"
     )
 
 
@@ -56,7 +56,7 @@ async def gucast(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         ny = await message.reply("`Started global broadcast...`")
     else:
-        return await message.edit("**Berikan sebuah pesan atau balas ke pesan**")
+        return await message.edit("**Pesan nya mana ngentot gada**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -79,7 +79,7 @@ async def gucast(client: Client, message: Message):
                     await asyncio.sleep(0.3)
                     
     await ny.edit(
-        f"**Successfully Sent Message To** `{done}` **chat, Failed to Send Message To** `{error}` **chat**"
+        f"**✅Successfully Sent Message To** `{done}` **chat, ❌to Send Message To** `{error}` **chat**"
     )
 
 
@@ -92,7 +92,7 @@ async def bl_chat(client, message):
     user_id = client.me.id
     bajingan = await blacklisted_chats(user_id)
     if chat in bajingan:
-        return await message.reply("Obrolan sudah masuk daftar Blacklist Gcast.")
+        return await message.reply("ʙᴇʀʜᴀsɪʟ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀғᴛᴀʀ ʜɪᴛᴀᴍ.")
     await blacklist_chat(user_id, chat_id)
     await message.reply("Obrolan telah berhasil dimasukkan ke dalam daftar Blacklist Gcast.")
     
