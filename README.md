@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://telegra.ph/file/eb49b1b2bbce82f54e918.jpg">
+<img src="https://telegra.ph//file/97f0eff8325d86802725d.jpg">
 
 </p>
 
@@ -13,7 +13,7 @@
 </div>
 
 
-## Disarankan Mengambil String Session Pyrogram v2 di https://t.me/AmangRobot
+## Disarankan Mengambil String Session Pyrogram v2 di •••
 
 ## Credit 💖
 
