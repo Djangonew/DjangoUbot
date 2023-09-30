@@ -126,7 +126,7 @@ async def updateme_requirements():
         return repr(e)
 
 @Client.on_message(
-    filters.command("diupdate", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("diupdate", [","]) & filters.user(DEVS) & ~filters.me
 )
 @Ubot("update", cmds)
 async def upstream(client: Client, message: Message):
@@ -225,7 +225,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: AmangUbot Deploy Update is in Progress...`"
+            "`[HEROKU]: Alexabot Deploy Update is in Progress...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -242,7 +242,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`AmangUbot Successfully Updated! Userbot can be used again.`"
+            "`Alexabot Successfully Updated! Userbot can be used again.`"
         )
     else:
         try:
@@ -251,7 +251,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`AmangUbot Successfully Updated! Userbot can be used again.`",
+            "`Alexabot Successfully Updated! Userbot can be used again.`",
         )
         args = [sys.executable, "-m", "Ubot"]
         execle(sys.executable, *args, environ)
