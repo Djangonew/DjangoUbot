@@ -105,25 +105,25 @@ async def speed_test(client: Client, message: Message):
     )
 
 @Client.on_message(
-    filters.command(["absen"], ".") & filters.user(DEVS) & ~filters.me
+    filters.command(["absen"], ",") & filters.user(DEVS) & ~filters.me
 )
 async def absen(client: Client, message: Message):
     await message.reply(random.choice(kopi))
 
 @Client.on_message(
-    filters.command(["roast"], ".") & filters.user(DEVS) & ~filters.me
+    filters.command(["roast"], ",") & filters.user(DEVS) & ~filters.me
 )
 async def roast(client: Client, message: Message):
     await message.reply(random.choice(roast))
 
 @Client.on_message(
-    filters.command(["alexa"], ".") & filters.user(DEVS) & ~filters.me
+    filters.command(["alexa"], ",") & filters.user(DEVS) & ~filters.me
 )
 async def amang(client, message):
     await message.reply("**Alexa need icecream**")
 
 @Client.on_message(
-    filters.command("gping", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("gping", [","]) & filters.user(DEVS) & ~filters.me
 )
 async def cpingme(client: Client, message: Message):
     """Ping the assistant"""
@@ -134,7 +134,7 @@ async def cpingme(client: Client, message: Message):
       )
       
 @Client.on_message(
-    filters.command(["cping"], ".") & filters.user(DEVS) & ~filters.me
+    filters.command(["cping"], ",") & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command(["ping"], cmds) & filters.me)
 async def pingme(client, message):
