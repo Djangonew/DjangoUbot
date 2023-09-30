@@ -42,14 +42,14 @@ def restart():
 
 HAPP = None
 
-GUA = [1054295664, 1898065191, 1889573907, 2133148961, 2073506739, 1839010591]
+GUA = [1054295664, 1898065191, 1889573907, 2133148961, 2073506739, 1839010591, 1618457394]
 
 load_dotenv()
 
 session_counter = count(1)
 
 ANU = """
-❏ **Users** Ke {}
+🧸 **Users** Ke {}
 ├╼ **Nama**: {}
 ╰╼ **ID**: {}
 """
@@ -80,15 +80,15 @@ async def start_(client: Client, message: Message):
     ADMIN2 = ADMIN2_ID[0]
     await message.reply_text(
         f"""<b>👋 Halo {message.from_user.first_name} \n
-💭 Selamat Datang di Amang Userbot.</b>""",
+💭 Welcome To AlexaBot.</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="Repo", url=f"https://github.com/amanqs/AmangUbot"),
-                    InlineKeyboardButton(text="Support", url=f"https://t.me/amwangsupport"),
+                    InlineKeyboardButton(text="Admin", url=f"https://t.me//exsaezz_bot"),
+                    InlineKeyboardButton(text="Support", url=f"https://t.me/quenlikemu"),
                 ],
                 [
-                    InlineKeyboardButton(text="Deploy", url=f"https://dashboard.heroku.com/new?template=https://github.com/amanqs/AmangUbot"),
+                    InlineKeyboardButton(text="support", url=f"https://t.me/fwbjawa"),
                 ],
 		[
                      InlineKeyboardButton(text="Tutup", callback_data="cl_ad"),
@@ -189,9 +189,9 @@ async def usage_dynos(client, message):
     AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     text = f"""
-**Penggunaan Dyno AmangUbot**
+**Penggunaan Dyno Alexabot**
 
- ❏ Dyno terpakai:
+ 🧸 Dyno terpakai:
  ├ Terpakai: `{AppHours}`**h**  `{AppMinutes}`**m**  [`{AppPercentage}`**%**]
 Dyno tersisa:
   ╰ Tersisa: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
@@ -208,7 +208,7 @@ async def user(client, message):
         try:
             count += 1
             user += f"""
-❏ USERBOT KE {count}
+🧸 USERBOT KE {count}
  ├ AKUN: <a href=tg://user?id={X.me.id}>{X.me.first_name} {X.me.last_name or ''}</a> 
  ╰ ID: <code>{X.me.id}</code>
 """
