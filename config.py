@@ -16,7 +16,7 @@ ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1054295664").split()))
 ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "1755047203").split()))
 ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "2073506739").split()))
 ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "918837361").split()))
-ADMIN5_ID = liat(map(int, getenv("ADMIN1_ID", "1618457394").split()))
+ADMIN5_ID = list(map(int, getenv("ADMIN1_ID", "1618457394").split()))
 
 
 ADMIN1_ID.append(1054295664)
