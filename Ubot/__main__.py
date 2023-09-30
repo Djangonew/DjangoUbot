@@ -29,7 +29,7 @@ BOT_VER ="8.1.0"
 
 
 MSG_ON = """
-**Amang Userbot Actived ✅**
+**Alexa Userbot Actived ✅**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ◉ **Versi** : `{}`
 ◉ **Phython** : `{}`
@@ -41,7 +41,7 @@ MSG_ON = """
 
 async def main():
     await app.start()
-    LOGGER("Amang Ubot").info("Memulai Amang Ubot..")
+    LOGGER("Alexa Ubot").info("Memulai Alexa Ubot..")
     for all_module in ALL_MODULES:
         importlib.import_module("Ubot.modules" + all_module)
     for bot in bots:
@@ -69,7 +69,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("Amang Ubot").info("Starting Ubot")
+    LOGGER("Alexa Ubot").info("Starting Ubot")
     install()
     event_loop.run_until_complete(main())
 
