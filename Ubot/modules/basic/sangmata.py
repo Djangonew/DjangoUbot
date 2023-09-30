@@ -15,7 +15,7 @@ from ubotlibs.ubot.utils import extract_user
 @Ubot(["sg"], cmds)
 async def sg(client: Client, message: Message):
     args = await extract_user(message)
-    lol = await message.edit_text("`Processing...`")
+    lol = await message.edit_text("`lu siapa sih tod...`")
     if args:
         try:
             user = await client.get_users(args)
