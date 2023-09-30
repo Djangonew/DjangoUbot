@@ -321,7 +321,7 @@ async def gahah(client: Client, message: Message):
         "------------------>",
         "------>;(^。^)ノ",
         "(￣ー￣) DEAD",
-        "**Mrr Gya Matherchod lala la 😈.😈.😈.😈.😈.😈.😈......**\n '#Sad_Reacts_Online'\n",
+        "**Mampus mati lu hahaha.😈.😈.😈.😈.😈.😈......**\n '#Sad_Reacts_Online'\n",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
