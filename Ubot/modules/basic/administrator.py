@@ -90,7 +90,7 @@ async def set_chat_photo(client: Client, message: Message):
     can_change_admin = zuzu.can_change_info
     can_change_member = message.chat.permissions.can_change_info
     if not (can_change_admin or can_change_member):
-        await message.reply("Kamu tidak punya akses wewenang")
+        await message.reply("Kamu tidak punya akses")
     if message.reply_to_message:
         if message.reply_to_message.photo:
             await client.set_chat_photo(
@@ -109,7 +109,7 @@ async def member_ban(client: Client, message: Message):
     if not user_id:
         return await message.edit("Tidak dapat menemukan pengguna.")
     if user_id == client.me.id:
-        return await message.edit("Tidak bisa banned diri sendiri.")
+        return await message.edit("Goblok Ngapain baned diri sendiri.")
     if user_id in DEVS:
         return await message.edit("Tidak bisa banned Devs!")
     if user_id in (await list_admins(client, message.chat.id)):
