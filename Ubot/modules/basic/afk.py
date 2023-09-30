@@ -33,7 +33,7 @@ is_afk = filters.create(func=is_afk_, name="is_afk_")
 @Ubot("afk", cmds)
 async def set_afk(client, message):
     if len(message.command) == 1:
-        return await message.reply(f"**Gunakan format dengan berikan alasan**\n\n**Contoh** : `afk berak`")
+        return await message.reply(f"**Gunakan format dengan berikan alasan**\n\n**Contoh** : `afk ngocok`")
     user_id = client.me.id
     botlog = await get_log_groups(user_id)
     pablo = await message.edit("Processing..")
@@ -42,11 +42,11 @@ async def set_afk(client, message):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     if msge:
-        msg = f"**❏ Sedang AFK**.\n** ╰ Alasan** : `{msge}`"
+        msg = f"**🧸 Sedang AFK**.\n** ╰ Alasan** : `{msge}`"
         await client.send_message(botlog, afkstr.format(msge))
         await go_afk(user_id, afk_start, msge)
     else:
-        msg = "**❏ Sedang AFK**."
+        msg = "**🧸 Sedang AFK**."
         await client.send_message(botlog, afkstr.format(msge))
         await go_afk(user_id, afk_start)
     await pablo.edit(msg)
@@ -73,7 +73,7 @@ async def afk_er(client, message):
         afk_sanity_check[use_r] += 1
     if afk_sanity_check[use_r] == 5:
         await message.reply_text(
-            "**❏ Sedang AFK**."
+            "**🧸 Sedang AFK**."
         )
         afk_sanity_check[use_r] += 1
         return
@@ -88,9 +88,9 @@ async def afk_er(client, message):
     afk_end = back_alivee.replace(microsecond=0)
     total_afk_time = str((afk_end - afk_start))
     message_to_reply = (
-        f"**❏ Sedang AFK**\n** ├ Waktu** :`{total_afk_time}`\n** ╰ Alasan** : `{reason}`"
+        f"**🧸 Sedang AFK**\n** ├ Waktu** :`{total_afk_time}`\n** ╰ Alasan** : `{reason}`"
         if reason
-        else f"**❏ Sedang AFK**\n** ╰ Waktu** :`{total_afk_time}`"
+        else f"**🧸 Sedang AFK**\n** ╰ Waktu** :`{total_afk_time}`"
     )
     await message.reply(message_to_reply)
     
@@ -104,7 +104,7 @@ async def no_afke(client, message):
     afk_start = lol["time"]
     afk_end = back_alivee.replace(microsecond=0)
     total_afk_time = str((afk_end - afk_start))
-    kk = await message.reply(f"**❏ Saya Kembali.**\n** ╰ AFK Selama** : {total_afk_time}")
+    kk = await message.reply(f"**🧸 Saya Kembali.**\n** ╰ AFK Selama** : {total_afk_time}")
     await kk.delete()
     await no_afk(user_id)
     await client.send_message(botlog, onlinestr.format(total_afk_time))
