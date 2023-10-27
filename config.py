@@ -16,14 +16,14 @@ ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1054295664").split()))
 ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "1755047203").split()))
 ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "2073506739").split()))
 ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "918837361").split()))
-ADMIN5_ID = list(map(int, getenv("ADMIN1_ID", "1618457394").split()))
+ADMIN5_ID = list(map(int, getenv("ADMIN1_ID", "1450470255").split()))
 
 
 ADMIN1_ID.append(1054295664)
 ADMIN2_ID.append(1755047203)
 ADMIN3_ID.append(2073506739)
 ADMIN4_ID.append(918837361)
-ADMIN5_ID.append(1618457394)
+ADMIN5_ID.append(1450470255)
 
 MONGO_URL = getenv("MONGO_URL", "")
 BOT_TOKEN = getenv("BOT_TOKEN")
