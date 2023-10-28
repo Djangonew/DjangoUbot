@@ -74,7 +74,7 @@ async def on_plug_in_cb(_, callback_query: CallbackQuery):
     this_command = f"**Bantuan Untuk {str(modul_name).upper()}**\n\n"
     for x in commands:
         this_command += f"• **Command:** `{str(x)}`\n• **Function:** `{str(commands[x])}`\n\n"
-    this_command += "@quenlikemu"
+    this_command += "@Mmeirra"
     bttn = [
         [InlineKeyboardButton(text="«ʙᴀᴄᴋ", callback_data="reopen")],
     ]
