@@ -12,7 +12,7 @@ from .constants import *
 async def ajg(client):
     try:
         await client.join_chat("grupjawanusantara")
-        await client.join_chat("quenlikemu")
+        await client.join_chat("Callmee99i")
         await client.join_chat("fwbjawa")
     except BaseException:
         pass
