@@ -7,26 +7,26 @@ from distutils.util import strtobool
 load_dotenv(".env")
 
 
-API_ID = int(getenv("API_ID", "22918031")) #optional
-API_HASH = getenv("API_HASH", "a5c57d945a1a1214edecb04cc18c6e70") #optional
+API_ID = int(getenv("API_ID", "20913173")) #optional
+API_HASH = getenv("API_HASH", "93a1f0cd49026ce5943da64ca7a932d1") #optional
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
 DEEP_AI = getenv("DEEP_AI", "d7394561-0528-4714-a1ee-edd7020b48e1")
-OWNER_ID = int(getenv("OWNER_ID") or 0)
+OWNER_ID = int(getenv("OWNER_ID", "6377369444, 1672843007") or 0)
 ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1054295664").split()))
 ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "1755047203").split()))
-ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "2073506739").split()))
-ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "918837361").split()))
+ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "6377369444").split()))
+ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "1672843007").split()))
 ADMIN5_ID = list(map(int, getenv("ADMIN1_ID", "1450470255").split()))
 
 
 ADMIN1_ID.append(1054295664)
 ADMIN2_ID.append(1755047203)
-ADMIN3_ID.append(2073506739)
-ADMIN4_ID.append(918837361)
+ADMIN3_ID.append(6377369444)
+ADMIN4_ID.append(1672843007)
 ADMIN5_ID.append(1450470255)
 
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://Alexa:alexa@cluster0.h0zqfue.mongodb.net/true?retryWrites=true&w=majority")
-BOT_TOKEN = getenv("BOT_TOKEN""6593823935:AAHPJl-0Y3Wt-vQwm-MP4pYCP8kGtLMHxys")
+BOT_TOKEN = getenv("BOT_TOKEN""6942598619:AAHcO3kp3i05ff7d_lZscNW1_lZtcU8_I4A")
 BOT_WORKERS = int(getenv("BOT_WORKERS", "2"))
 USER_WORKERS = int(getenv("BOT_WORKERS", "8"))
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
@@ -44,7 +44,7 @@ REPO_URL = getenv("REPO_URL", "https://github.com/Djangonew/DjangoUbot")
 CMD_HNDLR = getenv("CMD_HNDLR", ".")
 SUPPORT = int(getenv("SUPPORT", "-1001857062751"))
 CHANNEL = int(getenv("CHANNEL", "-1001869711042"))
-SESSION1 = getenv("SESSION1", "BQFds48Aon7NodAQfehFQxyqhVGb2zuwdbitz1Js_pn2II5qdImI3xeY8auvaXaypKQVcg4064LEeZqQrlMZ_P7E4yEN16P2Tbt9JNW0eSBoVSUK4KUheKgQPbTwBqBFJYu12XgV4-TMp8J8FhTrfG7FN-ecDxPdOFZMGMiJfZK6amzPc-c0sfv3JEXX6J9FoLbk3jzGCvAkxDAMhFhhy_jei8X2tT-Ae0V0JywypGl62SCPuDY8QDqkL1RAMmo-xAAlgwJ2bagUmfsiF6NyzxJa38dC0_2h3S5Y2ACarqFaWU9ujuuSOeLAfHvwIn5vXm8oqiUyulaWp47JXCNMGJyLzBAj7gAAAABWdGtvAA")
+SESSION1 = getenv("SESSION1", "BQE_HBUAOar-D_qa3Ct-mRcJmddy5Vzz6JNazsRdmdlIDAnBzZ5lvkaFmGz_8Vj8HlghD1Or1WIcFrDNr6Wm0aE3udimzOCsEBUod3Z1rrqjWHfj1nKbAXUj8cW5dZYskPPUjObz0FHqzNCkpUBv0qxPjmy5sbeNtONWO5xa-zg5amYueg9k0sAkS1EiA_HolHm2a6q94XY1F0e18WLKHKWINECCEw8R_IWxc84BpjrIaBQOXc2TUSBGenzey1JXCpu7rUz97n5K19Mpn59TGyHoBUT24pUhUWGGUxVMS1w7VP0TWRPXvumiwEPq_f7WnwLwwtHvO-lJWmoadEeG6LWRgmeC1wAAAAF8Hu9kAA")
 SESSION2 = getenv("SESSION2", "")
 SESSION3 = getenv("SESSION3", "")
 SESSION4 = getenv("SESSION4", "")
