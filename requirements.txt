@@ -6,7 +6,7 @@ pytgcalls==3.0.0.dev24
 openai
 uvloop
 ffmpeg-python
-git+https://github.com/yt-dlp/yt-dlp.git
+yt-dlp
 youtube-search
 youtube-search-python
 APScheduler==3.6.3
