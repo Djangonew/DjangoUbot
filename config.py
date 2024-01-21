@@ -26,7 +26,7 @@ ADMIN4_ID.append(1672843007)
 ADMIN5_ID.append(1450470255)
 
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://Alexa:alexa@cluster0.h0zqfue.mongodb.net/true?retryWrites=true&w=majority")
-BOT_TOKEN = getenv("BOT_TOKEN""6942598619:AAHcO3kp3i05ff7d_lZscNW1_lZtcU8_I4A")
+BOT_TOKEN = getenv("BOT_TOKEN", "6756415088:AAGTeK7WBYzxxgDVkX1FipTgt-xsK1Mw_Z0")
 BOT_WORKERS = int(getenv("BOT_WORKERS", "2"))
 USER_WORKERS = int(getenv("BOT_WORKERS", "8"))
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
